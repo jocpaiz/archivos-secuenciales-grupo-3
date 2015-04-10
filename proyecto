@@ -5,8 +5,9 @@
 #include <cstdlib>
 #include <cstring>
 using namespace std;
-
-
+int Menu();
+long LeeNumero();
+class Registro {
   public:
    Registro(char *n=NULL, int d1=0, int d2=0, int d3=0, int d4=0) : valido('S') {
      if(n) strcpy(nombre, n); else strcpy(nombre, "");
