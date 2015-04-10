@@ -17,7 +17,7 @@ class Registro {
      dato[2] = d3;
      dato[3] = d4;
    }
-   void Leer();
+    Leer();
    void Mostrar();
    void Listar(long n);
    const bool Valido() { return valido == 'S'; }
