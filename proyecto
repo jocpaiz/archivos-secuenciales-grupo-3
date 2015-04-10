@@ -49,7 +49,7 @@ void Registro::Mostrar()
    cout << "Pulsa una tecla";
    cin.get();
 }
-void Registro::Listar(long n) {
+void Registro::Lista(long n) {
    int i;
    if(Valido()) {
       cout << "[" << setw(6) << n << "] ";
