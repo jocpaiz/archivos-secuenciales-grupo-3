@@ -19,7 +19,7 @@ class Registro {
    }
    void Leer();
    void Mostrar();
-   void Listar(long n);
+   void Lista(long n);
    const bool Valido() { return valido == 'S'; }
    const char *Nombre() { return nombre; }
   private:
