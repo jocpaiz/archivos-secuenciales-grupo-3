@@ -72,7 +72,7 @@ class Datos :public fstream {
      Empaquetar();
    }
    void Guardar(Registro &reg);
-   bool Recupera(long n, Registro &reg);
+   bool Recuperar(long n, Registro &reg);
    void Borrar(long n);
   private:
    void Empaquetar();
@@ -177,5 +177,5 @@ long LeeNumero()
 {
    char numero[6];
    fgets(numero, 6, stdin);
-   return atoi(numero);
+   return (numero);
 }
