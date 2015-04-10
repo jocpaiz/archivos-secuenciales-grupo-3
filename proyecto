@@ -35,7 +35,7 @@ void Registro::Leer() {
    cin.getline(nombre, 34);
    for(int i = 0; i < 4; i++) {
       cout << "Dato[" << i << "]: ";
-      dato[i] = LeeNumero();
+      dato[i] = LeerNumero();
    }
 }
 void Registro::Mostrar()
