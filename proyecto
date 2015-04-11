@@ -76,9 +76,7 @@ class Datos :public fstream {
   private:
    void Empaquetar();
 };
-
 void Datos::Guardar(Registro &reg) {
-
    clear();
    seekg(0, ios::end);
    write(reinterpret_cast<char *> (&reg), sizeof(Registro));
@@ -90,7 +88,6 @@ bool Datos::Recupera(long n, Registro &reg) {
    read(reinterpret_cast<char *> (&reg), sizeof(Registro));
    return gcount() > 0;
 }
-
 void Datos::Borrar(long n) {
    char marca;
    clear();
@@ -98,7 +95,6 @@ void Datos::Borrar(long n) {
    seekg(n*sizeof(Registro), ios::beg);
    write(&marca, 1);
 }
-
 void Datos::Empaquetar() {
    ofstream ftemp("alea.tmp", ios::out);
    Registro reg;
@@ -160,7 +156,6 @@ int Menu()
    char resp[20];
    do {
     system("cls");
-     
       cout << "MENU PRINCIPAL" << endl;
       cout << "--------------" << endl << endl;
       cout << "1- Insertar registro" << endl;
