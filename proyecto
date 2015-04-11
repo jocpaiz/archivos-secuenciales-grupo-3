@@ -57,15 +57,7 @@ void Registro::Lista(long n) {
          cout << ", " << setw(4) << dato[i];
       cout << endl;
    }
-}
-class Datos :public fstream {
-  public:
-   Datos() : fstream("alea.dat", ios::in | ios::out | ios::binary) {
-      if(!good()) {
-         open("alea.dat", ios::in | ios::out | ios::trunc | ios::binary);
-         cout << "fichero creado" << endl;
-         cin.get();
-      }
+
    }
   ~Datos() {
      Empaquetar();
