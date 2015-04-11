@@ -167,7 +167,7 @@ int Menu()
    } while(resp[0] < '0' && resp[0] > '4');
    return resp[0];
 }
-long LeerNumero()
+long LeeNumero()
 {
    char numero[6];
    fgets(numero, 6, stdin);
