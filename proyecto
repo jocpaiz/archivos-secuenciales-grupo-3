@@ -151,14 +151,7 @@ int main()
             cout << "pulsa return";
             cin.get();
             break;
-      }
-   } while(opcion != '0');
-   return 0;
-}
-int Menu()
-{
-   char resp[20];
-   do {
+      
     system("cls");
      
       cout << "MENU PRINCIPAL" << endl;
