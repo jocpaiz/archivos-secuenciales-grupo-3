@@ -81,8 +81,7 @@ void Datos::Guardar(Registro &reg) {
    seekg(0, ios::end);
    write(reinterpret_cast<char *> (&reg), sizeof(Registro));
    cout << reg.Nombre() << endl;
-}
-bool Datos::Recupera(long n, Registro &reg) {
+}bool Datos::Recupera(long n, Registro &reg) {
    clear();
    seekg(n*sizeof(Registro), ios::beg);
    read(reinterpret_cast<char *> (&reg), sizeof(Registro));
